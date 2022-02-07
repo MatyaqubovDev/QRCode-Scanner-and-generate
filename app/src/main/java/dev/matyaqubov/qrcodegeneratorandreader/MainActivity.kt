@@ -52,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         if (resultCode==Activity.RESULT_OK){
             val result=IntentIntegrator.parseActivityResult(requestCode,resultCode,data)
             if (result!=null){
+                //toast
                 resultText.text=result.contents
             }
         }
